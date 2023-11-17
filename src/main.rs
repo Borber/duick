@@ -24,8 +24,8 @@ async fn main() {
             } else {
                 open(&text).await;
             }
-            pre_text = text;
         }
+        pre_text = text;
 
         tokio::time::sleep(std::time::Duration::from_millis(500)).await;
     }
